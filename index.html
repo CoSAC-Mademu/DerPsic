@@ -183,138 +183,138 @@
     </section>
   </main>
   <script>
-    const derive =  [
-      {
-        nome: "Deriva libera assoluta",
-        descrizione: "Si cammina senza scopo, lasciandosi guidare dalle atmosfere dei luoghi.",
-        regola: "Gira ogni volta che senti una voce femminile."
-      },
-      {
-        nome: "Deriva regolata",
-        descrizione: "Si stabilisce una regola arbitraria per destrutturare la mobilità (es. gira a destra a ogni fontana).",
-        regola: "Segui la persona davanti a te finché svolta."
-      },
-      {
-        nome: "Mappa di un'altra città",
-        descrizione: "Camminare nella propria città seguendo la mappa di un'altra, creando collisioni tra spazio immaginato e reale.",
-        regola: "Fermati per 10 secondi ogni volta che vedi una finestra aperta."
-      },
-      {
-        nome: "Suddivisione temporale",
-        descrizione: "Deriva con limiti di tempo precisi per ogni zona: es. 3 minuti per ogni strada percorsa.",
-        regola: "Ogni volta che vedi il colore rosso, cambia lato della strada."
-      },
-      {
-        nome: "Deriva sonora",
-        descrizione: "Camminare ascoltando i suoni della città come guida.",
-        regola: "Segui la persona davanti a te finché svolta."
-      },
-      {
-        nome: "Deriva olfattiva",
-        descrizione: "Seguire gli odori urbani come indicazioni di cammino.",
-        regola: "Annota ogni parola scritta che leggi lungo il tragitto."
-      },
-      {
-        nome: "Deriva tattile",
-        descrizione: "Camminare toccando superfici, pareti, materiali.",
-        regola: "Se senti una sirena, chiudi gli occhi e fai un respiro profondo."
-      },
-      {
-        nome: "Deriva al buio",
-        descrizione: "Camminare a occhi chiusi con guida, per intensificare ascolto e fiducia.",
-        regola: "Cammina solo all'ombra."
-      },
-      {
-        nome: "Deriva della postura",
-        descrizione: "Alterare la propria postura durante la camminata per cambiare percezione.",
-        regola: "Se senti una sirena, chiudi gli occhi e fai un respiro profondo."
-      },
-      {
-        nome: "Deriva delle memorie",
-        descrizione: "Percorrere luoghi legati a ricordi personali.",
-        regola: "Cambia direzione se incroci una bicicletta."
-      },
-      {
-        nome: "Deriva spettrale",
-        descrizione: "Cercare presenze assenti, ascoltare fantasmi architettonici.",
-        regola: "Cammina solo all'ombra."
-      },
-      {
-        nome: "Deriva delle interruzioni",
-        descrizione: "Fermarsi quando qualcosa disturba o interrompe il flusso.",
-        regola: "Cambia direzione se incroci una bicicletta."
-      },
-      {
-        nome: "Deriva dei luoghi chiusi",
-        descrizione: "Mappare e osservare luoghi sbarrati, inaccessibili.",
-        regola: "Cammina solo all'ombra."
-      },
-      {
-        nome: "Deriva mitogeografica",
-        descrizione: "Camminare come se ogni luogo contenesse una storia mitica.",
-        regola: "Tocca ogni oggetto metallico che incontri."
-      },
-      {
-        nome: "Deriva simbolica",
-        descrizione: "Tradurre gli elementi urbani come simboli con significati personali.",
-        regola: "Fermati per 10 secondi ogni volta che vedi una finestra aperta."
-      },
-      {
-        nome: "Drift relazionale",
-        descrizione: "Camminare parlando con qualcuno: il tema guida la rotta.",
-        regola: "Fermati e ascolta quando senti un campanello."
-      },
-      {
-        nome: "Deriva queer",
-        descrizione: "Cercare comfort imprevisti, desideri e deviazioni dallo spazio normato.",
-        regola: "Cambia direzione se incroci una bicicletta."
-      },
-      {
-        nome: "Deriva migrante",
-        descrizione: "Cercare i segni di migrazione, accesso negato, reinvenzione.",
-        regola: "Se senti una sirena, chiudi gli occhi e fai un respiro profondo."
-      },
-      {
-        nome: "Deriva dell'invisibile",
-        descrizione: "Camminare come chi è ignorato: anziani, delivery, bambini.",
-        regola: "Ogni volta che vedi il colore rosso, cambia lato della strada."
-      },
-      {
-        nome: "Urban drifting CCRU-style",
-        descrizione: "Leggere la città come rete glitchata di segnali e attriti.",
-        regola: "Fermati e ascolta quando senti un campanello."
-      },
-      {
-        nome: "Drift di Google Street View",
-        descrizione: "Deriva virtuale da seduti: esplorazione remota.",
-        regola: "Annota ogni parola scritta che leggi lungo il tragitto."
-      },
-      {
-        nome: "Deriva vegetale",
-        descrizione: "Seguire la vegetazione urbana spontanea e i suoi percorsi.",
-        regola: "Se senti una sirena, chiudi gli occhi e fai un respiro profondo."
-      },
-      {
-        nome: "Deriva dell'aria",
-        descrizione: "Lasciarsi guidare dal vento, luce, umidità.",
-        regola: "Cambia direzione se incroci una bicicletta."
-      },
-      {
-        nome: "Deriva delle superfici",
-        descrizione: "Camminare toccando solo muri, seguendo linee o texture.",
-        regola: "Fermati per 10 secondi ogni volta che vedi una finestra aperta."
-      },
-      {
-        nome: "Deriva a punteggio",
-        descrizione: "Ogni oggetto/segno trovato è un punto: caccia poetica urbana.",
-        regola: "Tocca ogni oggetto metallico che incontri."
-      },
-      {
-        nome: "Deriva collettiva a mappa muta",
-        descrizione: "Ogni persona cammina e poi segna dove ha sentito 'qualcosa' su una mappa muta.",
-        regola: "Ogni volta che vedi il colore rosso, cambia lato della strada."
-      }
-    ];
+    const derive = [
+  {
+    nome: "Deriva libera assoluta",
+    descrizione: "Cammina senza meta, lasciandoti attrarre o respingere spontaneamente dagli elementi urbani: un colore particolare, un suono, un'atmosfera. La città diventa un campo magnetico di forze psicologiche.",
+    regola: "Cambia direzione ogni volta che qualcosa cattura la tua attenzione senza una ragione logica"
+  },
+  {
+    nome: "Deriva regolata",
+    descrizione: "Stabilisci una regola arbitraria che rompa le tue abitudini di movimento. Esempi classici: girare sempre a sinistra, evitare strade con nomi di persone, seguire solo percorsi a zig-zag.",
+    regola: "Svolta a destra ogni volta che vedi un elemento blu nell'ambiente"
+  },
+  {
+    nome: "Mappa di un'altra città",
+    descrizione: "Usa la mappa di una città diversa (es. quella di Parigi se sei a Roma) per orientarti. Confronta la città reale con la sua rappresentazione aliena, notando incongruenze e sovrapposizioni inaspettate.",
+    regola: "Fermati quando l'architettura reale contraddice completamente la mappa che stai seguendo"
+  },
+  {
+    nome: "Suddivisione temporale",
+    descrizione: "Dividi il tuo percorso in intervalli di tempo fissi (es. 5 minuti per strada). Quando scade il tempo, cambia direzione a caso. Questo rompe la tua normale percezione delle distanze.",
+    regola: "Cambia tragitto ogni 3 minuti esatti, senza eccezioni"
+  },
+  {
+    nome: "Deriva sonora",
+    descrizione: "Fatti guidare dai suoni urbani: segui un rumore interessante, allontanati da quelli sgradevoli. Crea una traiettoria basata sul paesaggio acustico anziché visivo.",
+    regola: "Segui il suono più insolito che riesci a identificare, finché non si trasforma in altro"
+  },
+  {
+    nome: "Deriva olfattiva",
+    descrizione: "Traccia un percorso seguendo gli odori della città: dal profumo di un forno alla puzza di un cassonetto. Nota come gli odori definiscono zone invisibili.",
+    regola: "Annota su una mappa ogni cambiamento improvviso di odore che percepisci"
+  },
+  {
+    nome: "Deriva tattile",
+    descrizione: "Esplora la città attraverso il tatto: tocca muri, pavimenti, ringhiere con attenzione. Scopri differenze di materiali e temperature che normalmente ignori.",
+    regola: "Cambia strada ogni volta che incontri una superficie con una texture completamente nuova"
+  },
+  {
+    nome: "Deriva al buio",
+    descrizione: "Cammina in zone poco illuminate o chiudi gli occhi (con un accompagnatore). Affina altri sensi e percepisca lo spazio attraverso suoni, odori e aria sulla pelle.",
+    regola: "Cammina solo nelle zone d'ombra, evitando la luce diretta delle vetrine o lampioni"
+  },
+  {
+    nome: "Deriva della postura",
+    descrizione: "Cambia modo di camminare: a piccoli passi, sulle punte, a braccia aperte. Ogni postura altera la tua relazione con lo spazio e attira reazioni diverse.",
+    regola: "Cambia postura (es. cammina all'indietro) ogni volta che attraversi un incrocio"
+  },
+  {
+    nome: "Deriva delle memorie",
+    descrizione: "Segui un percorso basato sui tuoi ricordi personali invece che sulla logica urbana. Fermati dove qualcosa ti riporta a un episodio passato.",
+    regola: "Cambia direzione quando un dettaglio architettonico risveglia un ricordo specifico"
+  },
+  {
+    nome: "Deriva spettrale",
+    descrizione: "Cerca tracce di ciò che non c'è più: insegne sbiadite, edifici abbandonati, percorsi cancellati. Leggi la città come un palinsesto di storie rimosse.",
+    regola: "Segui solo strade che mostrano evidenti segni di usura o abbandono"
+  },
+  {
+    nome: "Deriva delle interruzioni",
+    descrizione: "Fermati deliberatamente quando qualcosa rompe il flusso urbano: un rumore improvviso, un ostacolo, un contrasto visivo. Sfrutta queste pause per osservare.",
+    regola: "Siediti per 1 minuto ogni volta che un suono meccanico interrompe l'ambiente"
+  },
+  {
+    nome: "Deriva dei luoghi chiusi",
+    descrizione: "Mappa tutti gli spazi a cui non puoi accedere: cancelli chiusi, porte sbarrate, aree private. Documenta come la città filtra i movimenti.",
+    regola: "Fotografa o annota ogni punto di transizione tra spazio pubblico e privato"
+  },
+  {
+    nome: "Deriva mitogeografica",
+    descrizione: "Inventa miti urbani: assegna storie fantastiche a edifici banali, trasforma un distributore in un totem, un sottopasso in un portale.",
+    regola: "Dai un nome mitologico a ogni piazza basato sui dettagli che osservi"
+  },
+  {
+    nome: "Deriva simbolica",
+    descrizione: "Leggi la città come un sistema di segni: cerca scritte cancellate, simboli nascosti, messaggi involontari nell'architettura.",
+    regola: "Fotografa ogni elemento che contraddice la funzione ufficiale di un luogo"
+  },
+  {
+    nome: "Drift relazionale",
+    descrizione: "Cammina conversando con qualcuno: lascia che il tema della discussione influenzi il percorso. Crea una narrazione ambulante collettiva.",
+    regola: "Cambia argomento ogni volta che attraversi una zona d'ombra"
+  },
+  {
+    nome: "Deriva queer",
+    descrizione: "Esplora la città dalla prospettiva di chi sfugge alle norme: cerca spazi di alterità, percorsi non convenzionali, architetture che permettono fluidità.",
+    regola: "Evita gli assi viari principali, privilegia percorsi curvilinei e secondari"
+  },
+  {
+    nome: "Deriva migrante",
+    descrizione: "Simula di essere nuovo in città: cerca percorsi che un forestiero farebbe, notando dettagli che i residenti ignorano. Segui logiche diverse dal solito.",
+    regola: "Chiedi indicazioni a sconosciuti anche se conosci la strada"
+  },
+  {
+    nome: "Deriva dell'invisibile",
+    descrizione: "Osserva la città dal punto di vista di chi viene ignorato: addetti alle pulizie, anziani, rider. Nota come lo spazio è organizzato per escluderli.",
+    regola: "Imita per 5 minuti l'andatura della prima persona 'invisibile' che incroci"
+  },
+  {
+    nome: "Urban drifting CCRU-style",
+    descrizione: "Cerca i glitch urbani: errori nella segnaletica, architetture incongruenti, spazi residuali. Leggi la città come un sistema in cortocircuito.",
+    regola: "Segui solo percorsi che mostrano evidenti contraddizioni o elementi fuori posto"
+  },
+  {
+    nome: "Drift di Google Street View",
+    descrizione: "Esplora virtualmente la città saltando tra punti casuali. Nota discrepanze tra rappresentazione digitale e realtà, zone censurate o immagini sfuocate.",
+    regola: "Segui solo strade dove l'immagine digitale mostra evidenti artefatti o errori"
+  },
+  {
+    nome: "Deriva vegetale",
+    descrizione: "Segui la vegetazione spontanea: edere che scalano muri, erbacce tra i marciapiedi. Traccia un percorso basato sulla riconquista naturale dello spazio.",
+    regola: "Cerca il tragitto con la maggiore concentrazione di piante selvatiche"
+  },
+  {
+    nome: "Deriva dell'aria",
+    descrizione: "Fatti guidare da correnti d'aria, cambi di temperatura, direzione del vento. Leggi la città come sistema meteorologico micro-locale.",
+    regola: "Cambia direzione quando avverti un improvviso cambiamento di temperatura o vento"
+  },
+  {
+    nome: "Deriva delle superfici",
+    descrizione: "Cammina mantenendo sempre contatto con superfici continue: muri, ringhiere, recinzioni. Scopri una geografia basata sul tatto anziché sulla vista.",
+    regola: "Non staccare la mano da una superficie continua per più di 10 passi"
+  },
+  {
+    nome: "Deriva a punteggio",
+    descrizione: "Assegna punti agli elementi urbani: +1 per ciò che sorprende, -1 per ciò che annoia. Crea una mappa basata sull'intensità emotiva anziché su logiche pratiche.",
+    regola: "Segna su una mappa ogni elemento che ti colpisce, classificandolo come 'attrazione' o 'repulsione'"
+  },
+  {
+    nome: "Deriva collettiva a mappa muta",
+    descrizione: "Con un gruppo, create una mappa dove ognuno segna solo i punti che hanno suscitato emozioni. Il risultato sarà una cartografia soggettiva condivisa.",
+    regola: "Disegna solo i confini delle zone dove avverti un cambiamento atmosferico percepibile"
+  }
+];
 
     // Aggiorna il contatore
     document.getElementById('counter').textContent = derive.length;
