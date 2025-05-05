@@ -145,6 +145,33 @@
       animation: subtlePulse 1.5s ease-in-out infinite;
     }
 
+    /* Footer */
+    footer {
+      margin-top: 2rem;
+      padding-top: 1rem;
+      border-top: 1px dashed #accbd9;
+      font-size: 0.7rem;
+      color: #666;
+      text-align: center;
+      opacity: 0.7;
+      transition: opacity 0.3s ease;
+    }
+
+    footer:hover {
+      opacity: 1;
+    }
+
+    footer div:first-child {
+      font-family: 'IBM Plex Mono', monospace;
+      letter-spacing: 1px;
+    }
+
+    footer div:last-child {
+      font-size: 0.6rem;
+      margin-top: 0.2rem;
+      font-style: italic;
+    }
+
     /* Ottimizzazioni per schermi grandi */
     @media (min-width: 768px) {
       main {
@@ -181,7 +208,13 @@
       <p id="descrizioneDeriva"></p>
       <p class="regola"><strong>Regola extra:</strong> <span id="regolaExtra"></span></p>
     </section>
+
+    <footer>
+      <div>CoSAC</div>
+      <div>Collettivo Slittamenti Anti Cibernetici</div>
+    </footer>
   </main>
+
   <script>
     const derive = [
   {
@@ -376,6 +409,7 @@
   }
 ];
 
+
     // Aggiorna il contatore
     document.getElementById('counter').textContent = derive.length;
 
@@ -403,21 +437,5 @@
       }, 300);
     });
   </script>
-
-  <footer style="
-    margin-top: 2rem;
-    font-size: 0.7rem;
-    color: #666;
-    text-align: center;
-    opacity: 0.7;
-    transition: opacity 0.3s ease;
-">
-    <div>CoSAC</div>
-    <div style="
-        font-size: 0.6rem;
-        margin-top: 0.2rem;
-        font-style: italic;
-    ">Collettivo Slittamenti Anti Cibernetici</div>
-</footer>
-  </body>
+</body>
 </html>
